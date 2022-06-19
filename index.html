@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracket</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h2 class="h1">Expense Tracker</h2>
+    <div class="container">
+        <main>
+            <header>
+                <h4 class="h2">Balance</h4>
+                <h1 id="balance" class="balance">$0.00</h1>
+            </header>
+            <ul class="inc-exp-container">
+                <div>
+                    <h4>Ganado</h4>
+                    <p id="income" class="money plus">+$0.00</p>
+                </div>
+                <div>
+                    <h4>Gastado</h4>
+                    <p id="expense" class="money minus">-$0.00</p>
+                </div>
+            </ul>
+        </main>
+        <ul class="list" id="list-history">
+        </ul>
+        <div>
+            <h2 class="h3">Añadir nueva transaccion</h2>
+            <div class="form-control">
+                <label for="description">Descripcion</label>
+                <input type="text" name="description" id="description" placeholder="Ingrese la descripcion" required>
+            </div>
+            <div class="form-control">
+                <label for="value">Valor</label>
+                <input type="number" name="value" id="value" placeholder="Ingrese el valor" required>
+            </div>
+
+            <input type="button" class="btn" value="Añadir transaccion" id="send-transaction">
+        </div>
+        <details class="config">
+            <summary class="config-title">Configuraciones</summary>
+            <div class="config-content" id="config">
+                <input type="button" value="Vacial almacenamiento">
+                <input type="button" value="Cambiar tema">
+            </div>
+        </details>
+    </div>
+
+
+    <script src="./js/aplication.js" type="module"></script>
+</body>
+
+</html>
